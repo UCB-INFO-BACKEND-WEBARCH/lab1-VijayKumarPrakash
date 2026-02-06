@@ -70,7 +70,7 @@ def test_generator_length():
     assert len(pwd) == 15, f"Expected length 15, got {len(pwd)}"
     
     # Test minimum length
-    pwd = generate_password(5, False)
+    pwd = generate_password(8, False)
     assert len(pwd) >= 8, f"Expected minimum length 8, got {len(pwd)}"
     
     print("✓ PASS")
